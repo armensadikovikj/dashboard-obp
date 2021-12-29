@@ -1,6 +1,6 @@
 <?php
 
-class Products extends DB
+class Products extends Controller
 {
 
     use Helper;

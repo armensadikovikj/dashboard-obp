@@ -1,7 +1,7 @@
 <?php
 
 
-class User extends DB
+class User extends Controller
 {
     use Helper;
 

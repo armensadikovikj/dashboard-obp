@@ -1,6 +1,6 @@
 <?php
 
-class Pages extends DB
+class Pages extends Controller
 {
     use Helper;
 

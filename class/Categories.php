@@ -1,6 +1,6 @@
 <?php
 
-class Categories extends DB
+class Categories extends Controller
 {
 
     use Helper;
