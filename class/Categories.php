@@ -2,6 +2,9 @@
 
 class Categories extends DB
 {
+
+    use Helper;
+
     private $id;
     public $name;
     private $parent_id;

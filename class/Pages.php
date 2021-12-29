@@ -2,6 +2,9 @@
 
 class Pages extends DB
 {
+    use Helper;
+
+
     private $id;
     public $title;
     public $description;

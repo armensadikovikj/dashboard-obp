@@ -3,6 +3,7 @@
 class Products extends DB
 {
 
+    use Helper;
 
     private $id;
     private $name;

@@ -3,6 +3,7 @@
 
 class User extends DB
 {
+    use Helper;
 
     // const -- pristapuvamme do nejze direktno so klasata primer User::MARTIN ili vnatre vo klasata so self::
     const MARTIN = 'Martin Karadzinov';
