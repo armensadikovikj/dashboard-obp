@@ -238,11 +238,7 @@ class User extends DB
             'name' => $this->name,
             'email' => $this->email,
             'password' => $this->password,
-            'agree' => $this->agree,
-            'employed' => $this->employed,
-            'image' => $this->image,
-            'status' => $this->status,
-            'title' => $this->title
+            'image' => $this->image
         ];
 
 
@@ -251,17 +247,14 @@ class User extends DB
     }
 
 
+
     public function updateUser()
     {
         $data = [
             'name' => $this->name,
             'email' => $this->email,
             'password' => $this->password,
-            'agree' => $this->agree,
-            'employed' => $this->employed,
-            'image' => $this->image,
-            'status' => $this->status,
-            'title' => $this->title
+            'image' => $this->image
         ];
 
         parent::update($data, $this->id);
@@ -275,13 +268,9 @@ class User extends DB
         $this->id           = $user['id'];
         $this->name         = $user['name'];
         $this->password     = $user['password'];
-        $this->agree        = $user['agree'];
         $this->created_at   = $user['created_at'];
-        $this->updated_at   = $user['upadated_at'];
+        $this->updated_at   = $user['updated_at'];
         $this->image        = $user['image'];
-        $this->status       = $user['status'];
-        $this->employed     = $user['employed'];
-        $this->title        = $user['title'];
         $this->email        = $user['email'];
 
         return $this;
@@ -294,13 +283,9 @@ class User extends DB
         $this->id           = $user['id'];
         $this->name         = $user['name'];
         $this->password     = $user['password'];
-        $this->agree        = $user['agree'];
         $this->created_at   = $user['created_at'];
-        $this->updated_at   = $user['upadated_at'];
+        $this->updated_at   = $user['updated_at'];
         $this->image        = $user['image'];
-        $this->status       = $user['status'];
-        $this->employed     = $user['employed'];
-        $this->title        = $user['title'];
         $this->email        = $user['email'];
 
         return $this;
@@ -317,13 +302,8 @@ class User extends DB
             $u->setEmail($user['email']);
             $u->setPassword($user['password']);
             $u->setImage($user['image']);
-            $u->setStatus($user['status']);
             $u->setCreatedAt($user['created_at']);
-            $u->setUpdatedAt($user['upadated_at']);
-            $u->setTitle($user['title']);
-            $u->setAgree($user['agree']);
-            $u->setEmployed($user['employed']);
-            $u->setStatus($user['status']);
+            $u->setUpdatedAt($user['updated_at']);
 
             $all[] = $u;
         }

@@ -12,7 +12,7 @@ class DB
     public function __construct($table)
     {
         $this->db_user = 'homestead';
-        $this->db_name = 'dashboard';
+        $this->db_name = 'dashboard_oop';
         $this->db_pass = 'secret';
         $this->db_host = 'localhost';
         $this->tableName = $table;
@@ -36,6 +36,8 @@ class DB
         $values = implode(',', $values);
 
         $sql = "INSERT INTO $this->tableName ($keys) VALUES ($values)";
+
+
 
 
         $mysqli = self::connect();
