@@ -1,5 +1,7 @@
 {
     "require": {
-        "nesbot/carbon": "^2.55"
+        "nesbot/carbon": "^2.55",
+        "intervention/image": "^2.7",
+        "stripe/stripe-php": "^7.108"
     }
 }

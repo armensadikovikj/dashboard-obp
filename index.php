@@ -16,7 +16,16 @@ $user = new User();
 
 $user->getUser($_SESSION['user']);
 
+use Carbon\Carbon;
 
+use Stripe\StripeClient;
+
+$stripe = new StripeClient("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
+
+
+
+
+echo Carbon::now()->format('Y-m-d');
 
 
 /*
