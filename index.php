@@ -1,8 +1,16 @@
 <?php
+session_start();
+
+
+
 spl_autoload_register(function ($class) {
     include 'class/' . $class . '.php';
 });
 
+
+$user = new User();
+
+$user->getUser($_SESSION['user']);
 
 
 

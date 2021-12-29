@@ -1,3 +1,3 @@
 <?php
 
-define('SITE_URL', 'http://dashboard-obp.test');
+define('SITE_URL', 'http://armen-oop.test');
